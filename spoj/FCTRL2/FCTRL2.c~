@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+long long fact (int n) {
+    long long prod = 1;
+    while (n > 0) {
+        prod = prod*n;
+        n--;
+    }
+    return prod;
+}
+
+int main () {
+
+    printf("%lld", fact(25));
+
+    return 0;
+}
